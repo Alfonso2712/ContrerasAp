@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<body>
+
+    <h2>alerta con Jquery</h2>
+    <button onclick="myFunction()">Modo Creativo</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            var txt;
+            if(confirm("Quieres activar el modo creativo?")){
+                txt = "Activo: true"
+            }else{
+                txt = "Cancelaste el comando"
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
