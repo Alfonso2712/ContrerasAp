@@ -3,20 +3,24 @@
 <body>
 
     <h2>alerta con Jquery</h2>
-    <button onclick="myFunction()">Modo Creativo</button>
+    <button onclick="myFunction()">Soy un humano</button>
 
     <p id="demo"></p>
 
     <script>
-        function myFunction(){
+        function myFunction() {
             var txt;
-            if(confirm("Quieres activar el modo creativo?")){
+            if (confirm("¿Eres un humano?")) {
                 txt = "Activo: true"
-            }else{
+            } else {
                 txt = "Cancelaste el comando"
             }
             document.getElementById("demo").innerHTML = txt;
         }
     </script>
+    
+        <button type="button" onclick="history.go(-1)" ;>Regresar al inicio</button>
+    
+
 </body>
 </html>
